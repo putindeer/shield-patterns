@@ -1,0 +1,4 @@
+name: shield-banners
+version: '1.0'
+main: me.putindeer.shieldbanners.Main
+api-version: '1.21'
