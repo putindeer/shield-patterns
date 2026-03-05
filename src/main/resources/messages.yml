@@ -1,0 +1,105 @@
+# All of this is formatted using MiniMessage API.
+# Check what you can do at:
+# https://docs.papermc.io/adventure/minimessage/format/
+no-permission: "<red>No permission."
+max-patterns: "<red>Max patterns reached. Reset your shield banner to edit it again."
+reload-success: "<green>config.yml and messages.yml reloaded successfully."
+shieldreset:
+  usage: "<red>Usage: /shieldreset <player>"
+  # Here, you can use %player% to display the target's name.
+  not-found: "<red>Player '%player%' not found or is offline."
+  success: "<green>Shield banner reset for %player%."
+  # Here, you can use %player% to display the administrator's name instead.'
+  resetted: "<red>Your shield banner has been reset by an administrator."
+gui:
+  color-title: "<black><bold>Shield Banner Color"
+  # This uses the color's hex code by default. If you want, you can override it and use your own color instead by just using a color tag.
+  pattern-title: "<bold>Shield Banner Pattern"
+  your-banner:
+    name: "<yellow>Your Banner"
+    description:
+      - "<aqua>Click this to reset your shield banner."
+  your-shield:
+    name: "<yellow>Your Shield"
+    description:
+      - "<aqua>Click this to reset your shield banner."
+  back:
+    name: "<red>Back"
+    description:
+      - "Click this to go back to the previous menu."
+  # These are not used in the GUI since currently (1.21.11) there are 43 patterns, so two pages are not necessary.
+  next-page:
+    name: "<green>Next Page"
+    description:
+      - "Click this to go to the next page."
+  previous-page:
+    name: "<green>Previous Page"
+    description:
+      - "Click this to go to the previous page."
+  colors:
+    white: "<color:#F9FFFE>White</color>"
+    orange: "<color:#F9801D>Orange</color>"
+    magenta: "<color:#C74EBD>Magenta</color>"
+    light_blue: "<color:#3AB3DA>Light Blue</color>"
+    yellow: "<color:#FED83D>Yellow</color>"
+    lime: "<color:#80C71F>Lime</color>"
+    pink: "<color:#F38BAA>Pink</color>"
+    gray: "<color:#474F52>Gray</color>"
+    light_gray: "<color:#9D9D97>Light Gray</color>"
+    cyan: "<color:#169C9C>Cyan</color>"
+    purple: "<color:#8932B8>Purple</color>"
+    blue: "<color:#3C44AA>Blue</color>"
+    brown: "<color:#835432>Brown</color>"
+    green: "<color:#5E7C16>Green</color>"
+    red: "<color:#B02E26>Red</color>"
+    black: "<color:#1D1D21>Black</color>"
+  # Here, you can use %color% to display the color name.
+  color-description:
+    - "Click to add a pattern with the color %color%<gray>."
+  patterns:
+    base: "Base"
+    border: "Border"
+    bricks: "Bricks"
+    circle: "Circle"
+    creeper: "Creeper"
+    cross: "Cross"
+    curly_border: "Curly Border"
+    diagonal_left: "Diagonal Left"
+    diagonal_right: "Diagonal Right"
+    diagonal_up_left: "Diagonal Up Left"
+    diagonal_up_right: "Diagonal Up Right"
+    flow: "Flow"
+    flower: "Flower"
+    globe: "Globe"
+    gradient: "Gradient"
+    gradient_up: "Gradient Up"
+    guster: "Guster"
+    half_horizontal: "Half Horizontal"
+    half_horizontal_bottom: "Half Horizontal Bottom"
+    half_vertical: "Half Vertical"
+    half_vertical_right: "Half Vertical Right"
+    mojang: "Mojang"
+    piglin: "Piglin"
+    rhombus: "Rhombus"
+    skull: "Skull"
+    small_stripes: "Small Stripes"
+    square_bottom_left: "Square Bottom Left"
+    square_bottom_right: "Square Bottom Right"
+    square_top_left: "Square Top Left"
+    square_top_right: "Square Top Right"
+    straight_cross: "Straight Cross"
+    stripe_bottom: "Stripe Bottom"
+    stripe_center: "Stripe Center"
+    stripe_downleft: "Stripe Down Left"
+    stripe_downright: "Stripe Down Right"
+    stripe_left: "Stripe Left"
+    stripe_middle: "Stripe Middle"
+    stripe_right: "Stripe Right"
+    stripe_top: "Stripe Top"
+    triangle_bottom: "Triangle Bottom"
+    triangle_top: "Triangle Top"
+    triangles_bottom: "Triangles Bottom"
+    triangles_top: "Triangles Top"
+  # Here, you can use %pattern% to display the pattern name.
+  pattern-description:
+    - "<aqua>Click to add this pattern."

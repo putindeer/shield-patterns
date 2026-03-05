@@ -1,4 +1,31 @@
-name: shield-banners
-version: '1.0'
-main: me.putindeer.shieldbanners.Main
+name: shield-patterns
+version: ${project.version}
+main: me.putindeer.shieldpatterns.Main
 api-version: '1.21'
+author: putindeer
+description: Plugin to let your userbase create their custom shield patterns.
+website: https://github.com/putindeer/shield-patterns
+
+commands:
+  shieldbanner:
+    description: Create new banner patterns.
+    permission: shieldpatterns.shieldbanner
+    aliases: [banner]
+  shieldreset:
+    description: Reset a shield banner pattern.
+    permission: shieldpatterns.admin
+    usage: /shieldreset <player>
+  shieldreload:
+    description: Reload the plugin.
+    permission: shieldpatterns.admin
+
+permissions:
+  shieldpatterns.shieldbannercreate:
+    description: Permission to create new shield patterns.
+    default: op
+  shieldpatterns.shieldbanneruse:
+    description: Permission to use shield patterns.
+    default: op
+  shieldpatterns.admin:
+    description: Permission to reset shield patterns.
+    default: op

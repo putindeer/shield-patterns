@@ -1,0 +1,12 @@
+# The prefix to use for messages.
+# Set to "" to disable.
+prefix: "<dark_gray>[<aqua>shield-banners</aqua>]<reset> "
+# Maximum number of patterns to allow the players to stack.
+# Setting this too high (for example: 1024) will be negative for performance.
+max-patterns: 32
+# If enabled, existing patterns from shields will be overridden.
+should-override: true
+# If enabled, the vanilla pattern name will be hidden.
+hide-vanilla-pattern-name: true
+# If true, the pattern preview in the GUI will show the full result on the shield instead of the plain pattern on a blank banner.
+gui-show-result: false
