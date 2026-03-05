@@ -10,6 +10,17 @@ Let your players create fully custom shield banner patterns through a simple in-
 
 ---
 
+## Features
+
+- In-game GUI to pick a color and stack up to 'n' patterns on your shield
+- Patterns are saved to a SQLite database and persist across restarts
+- Applied automatically when a player clicks a shield in their inventory
+- Supports overriding shields that already have patterns
+- Fully configurable messages via `messages.yml` using [MiniMessage](https://docs.papermc.io/adventure/minimessage/format)
+- Admin commands to reset any player's banner and reload configs
+
+---
+
 ## Showcase
 
 <p>
@@ -19,17 +30,6 @@ Let your players create fully custom shield banner patterns through a simple in-
 <p>
   <img src=".github/assets/shield-showcase.png" alt="Custom shield in-game" />
 </p>
-
----
-
-## Features
-
-- In-game GUI to pick a color and stack up to 'n' patterns on your shield
-- Patterns are saved to a SQLite database and persist across restarts
-- Applied automatically when a player clicks a shield in their inventory
-- Supports overriding shields that already have patterns
-- Fully configurable messages via `messages.yml` using [MiniMessage](https://docs.papermc.io/adventure/minimessage/format)
-- Admin commands to reset any player's banner and reload configs
 
 ---
 
