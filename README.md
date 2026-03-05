@@ -30,9 +30,9 @@ Let your players create fully custom shield banner patterns through a simple in-
       <img src=".github/assets/shield-banner-showcase.png" width="100%" alt="Custom shield in-game" />
     </td>
     <td valign="top" width="60%">
-      <img src=".github/assets/banner-pattern.png" width="100%" alt="Pattern selection menu" />
+      <img src=".github/assets/default-banner-pattern.png" width="100%" alt="Pattern selection menu" />
       <p><em>With <code>gui-show-result</code> enabled:</em></p>
-      <img src=".github/assets/banner-pattern2.png" width="100%" alt="Pattern selection menu with gui-show-result enabled" />
+      <img src=".github/assets/show-result-banner-pattern.png" width="100%" alt="Pattern selection menu with gui-show-result enabled" />
     </td>
   </tr>
 </table>
