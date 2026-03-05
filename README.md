@@ -5,7 +5,7 @@ Let your players create fully custom shield banner patterns through a simple in-
 ![Minecraft](https://img.shields.io/badge/minecraft_version-1.21%2B-62b47a?style=flat-square)
 ![Paper](https://img.shields.io/badge/server_software-paper-f7cf6d?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/putindeer/shield-patterns?style=flat-square)
-![Latest Release](https://img.shields.io/github/release/putindeer/shield-patterns?style=flat-square&color=blue)
+![Latest Release](https://img.shields.io/github/v/release/putindeer/shield-patterns?style=flat-square&color=blue)
 ![License](https://img.shields.io/github/license/putindeer/shield-patterns?style=flat-square)
 
 ---
@@ -23,13 +23,19 @@ Let your players create fully custom shield banner patterns through a simple in-
 
 ## Showcase
 
-<p>
-  <img src=".github/assets/banner-color.png"  alt="Color selection menu" />
-  <img src=".github/assets/banner-pattern.png" alt="Pattern selection menu" />
-</p>
-<p>
-  <img src=".github/assets/shield-showcase.png" alt="Custom shield in-game" />
-</p>
+<table>
+  <tr>
+    <td valign="top" width="40%">
+      <img src=".github/assets/banner-color.png" width="100%" alt="Color selection menu" />
+      <img src=".github/assets/shield-banner-showcase.png" width="100%" alt="Custom shield in-game" />
+    </td>
+    <td valign="top" width="60%">
+      <img src=".github/assets/banner-pattern.png" width="100%" alt="Pattern selection menu" />
+      <p><em>With <code>gui-show-result</code> enabled:</em></p>
+      <img src=".github/assets/banner-pattern2.png" width="100%" alt="Pattern selection menu with gui-show-result enabled" />
+    </td>
+  </tr>
+</table>
 
 ---
 
