@@ -5,7 +5,7 @@ Let your players create fully custom shield banner patterns through a simple in-
 ![Minecraft](https://img.shields.io/badge/minecraft_version-1.21%2B-62b47a?style=flat-square)
 ![Paper](https://img.shields.io/badge/server_software-paper-f7cf6d?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/putindeer/shield-patterns?style=flat-square)
-![Latest Release](https://img.shields.io/github/v/release/putindeer/shield-patterns?style=flat-square&color=blue)
+![Latest Release](https://img.shields.io/github/release/putindeer/shield-patterns?style=flat-square&color=blue)
 ![License](https://img.shields.io/github/license/putindeer/shield-patterns?style=flat-square)
 
 ---
