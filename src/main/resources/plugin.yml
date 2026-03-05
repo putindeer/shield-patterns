@@ -9,7 +9,7 @@ website: https://github.com/putindeer/shield-patterns
 commands:
   shieldbanner:
     description: Create new banner patterns.
-    permission: shieldpatterns.shieldbanner
+    permission: shieldpatterns.shieldbannercreate
     aliases: [banner]
   shieldreset:
     description: Reset a shield banner pattern.

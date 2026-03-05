@@ -63,7 +63,7 @@ Let your players create fully custom shield banner patterns through a simple in-
 ```yaml
 # The prefix to use for messages.
 # Set to "" to disable.
-prefix: "<dark_gray>[<aqua>shield-banners</aqua>]<reset> "
+prefix: "<dark_gray>[<aqua>shield-patterns</aqua>]<reset> "
 # Maximum number of patterns to allow the players to stack.
 # Setting this too high (for example: 1024) will be negative for performance.
 max-patterns: 32

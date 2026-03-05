@@ -16,7 +16,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        String prefix = getConfig().getString("prefix", "<dark_gray>[<aqua>shield-banners</aqua>]<reset>");
+        String prefix = getConfig().getString("prefix", "<dark_gray>[<aqua>shield-patterns</aqua>]<reset>");
         utils = new PluginUtils(this, prefix);
         startup();
         manager = new BannerManager(this);
@@ -60,14 +60,14 @@ public class Main extends JavaPlugin {
      * - Reloads the messages from the "messages.yml" file using the {@link #loadMessages()} method.
      * - Reloads the primary plugin configuration.
      * - Updates the utility class's prefix value using the configuration's "prefix" key,
-     *   defaulting to "<dark_gray>[<aqua>shield-banners</aqua>]<reset>" if the key is not found.
+     *   defaulting to "<dark_gray>[<aqua>shield-patterns</aqua>]<reset>" if the key is not found.
      * - Refreshes the BannerManager configuration using the {@code manager.refreshConfig()} method,
      *   ensuring the latest settings are applied.
      */
     public void reloadPlugin() {
         loadMessages();
         reloadConfig();
-        utils.setPrefix(getConfig().getString("prefix", "<dark_gray>[<aqua>shield-banners</aqua>]<reset>"));
+        utils.setPrefix(getConfig().getString("prefix", "<dark_gray>[<aqua>shield-patterns</aqua>]<reset>"));
         manager.refreshConfig();
     }
 
@@ -96,9 +96,9 @@ public class Main extends JavaPlugin {
                 "<green>  /shieldreload             - reload config.yml and messages.yml",
                 "<green>  ─────────────────────────────────────────",
                 "<green>permissions:",
-                "<green>  shieldpatterns.shieldbanner    - use /shieldbanner",
-                "<green>  shieldpatterns.shieldbanneruse - apply banner to shields on click",
-                "<green>  shieldpatterns.admin           - use /shieldreset and /shieldreload",
+                "<green>  shieldpatterns.shieldbannercreate - use /shieldbanner command",
+                "<green>  shieldpatterns.shieldbanneruse    - apply banner to shields on click",
+                "<green>  shieldpatterns.admin              - use /shieldreset and /shieldreload",
                 "<green>─────────────────────────────────────────",
                 "<green>config (plugins/shield-patterns/config.yml):",
                 "<green>prefix:                    plugin prefix shown in messages",
