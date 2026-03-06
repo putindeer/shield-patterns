@@ -14,6 +14,7 @@ import org.bukkit.block.banner.Pattern;
 import org.bukkit.block.banner.PatternType;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.List;
 import java.util.Objects;
@@ -51,7 +52,8 @@ public class BannerGUI {
         FastInv inv = new FastInv(owner -> Bukkit.createInventory(owner, 27, plugin.utils.chat(plugin.getMessages().getString("gui.color-title"))));
 
         int[] border = {18, 19, 20, 22, 24, 25, 26};
-        inv.setItems(border, plugin.utils.ib(Material.GRAY_STAINED_GLASS_PANE).hideTooltip().build());
+
+        inv.setItems(border, glassPane());
 
         inv.setItem(21, buildPreviewBanner(), e -> {
             plugin.manager.reset(player);
@@ -108,7 +110,7 @@ public class BannerGUI {
                 .apply(inv);
 
         int[] border = {46, 47, 51, 52};
-        inv.setItems(border, plugin.utils.ib(Material.GRAY_STAINED_GLASS_PANE).hideTooltip().build());
+        inv.setItems(border, glassPane());
 
         inv.setItem(48, buildPreviewBanner(), e -> {
             plugin.manager.reset(player);
@@ -195,7 +197,7 @@ public class BannerGUI {
                         setupNavigationButtons(inv);
                     });
         } else {
-            inv.setItem(53, plugin.utils.ib(Material.GRAY_STAINED_GLASS_PANE).hideTooltip().build());
+            inv.setItem(53, glassPane());
         }
 
         if (!inv.isFirstPage()) {
@@ -209,7 +211,7 @@ public class BannerGUI {
                         setupNavigationButtons(inv);
                     });
         } else {
-            inv.setItem(45, plugin.utils.ib(Material.GRAY_STAINED_GLASS_PANE).hideTooltip().build());
+            inv.setItem(45, glassPane());
         }
     }
 
@@ -244,5 +246,18 @@ public class BannerGUI {
                 .lore(plugin.getMessages().getStringList("gui.your-shield.description"))
                 .pattern(patterns.toArray(Pattern[]::new))
                 .build();
+    }
+
+    /**
+     * Creates and returns a gray stained glass pane ItemStack with hidden tooltips.
+     *
+     * @return An ItemStack representing a gray stained glass pane with its tooltip hidden.
+     */
+    private ItemStack glassPane() {
+        ItemStack glassPane = new ItemStack(Material.GRAY_STAINED_GLASS_PANE);
+        ItemMeta meta = glassPane.getItemMeta();
+        meta.setHideTooltip(true);
+        glassPane.setItemMeta(meta);
+        return glassPane;
     }
 }

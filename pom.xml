@@ -6,7 +6,7 @@
 
     <groupId>me.putindeer</groupId>
     <artifactId>shield-patterns</artifactId>
-    <version>1.0b</version>
+    <version>1.0c</version>
     <packaging>jar</packaging>
 
     <name>shield-patterns</name>
